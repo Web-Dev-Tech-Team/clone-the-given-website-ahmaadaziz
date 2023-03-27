@@ -1,0 +1,26 @@
+nav {
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  display: block;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0px 300px;
+}
+
+.link {
+  margin-left: 1rem;
+}
