@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #787878;
 }
 
 body {
@@ -60,7 +66,9 @@ nav {
 }
 
 .icon {
-  padding: 2rem 20px;
+  margin: 2rem 20px;
+  cursor: pointer;
+  color: #243045;
 }
 
 .form-contianer {
@@ -88,18 +96,40 @@ input {
   margin-right: 4rem;
 }
 
+#name,
+#email {
+  border: none;
+  paddin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+#name:focus,
+#email:focus {
+  outline: none;
+  border-bottom: 1px solid blue;
+}
+
+#name: {
+  border-bottom: 1px solid blue;
+}
+
 #message {
   margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 .btn {
-  width: 4rem;
+  background: transparent;
   border: 1px solid black;
   border-radius: 0;
   text-align: center;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px 1rem;
   align-self: center;
+}
+
+.btn:hover {
+  background: #e9e9e9;
 }
 
 .graphic {
@@ -111,7 +141,14 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-bottom: 7rem;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  background: #e9e9e9;
+}
+
+h3 {
+  color: #353b3f;
+  font-weight: bold;
 }
 
 footer {
@@ -122,6 +159,12 @@ footer {
   padding: 1rem 0rem;
   padding-right: 2rem;
   box-shadow: 0px -12px 25px 1px rgba(0, 0, 0, 0.2);
+  background: #d1d1d1;
+}
+
+.social {
+  cursor: pointer;
+  color: #787878;
 }
 
 footer > ul {
@@ -131,6 +174,8 @@ footer > ul {
 
 footer > h4 {
   padding-right: 5rem;
+  font-style: italic;
+  font-weight: normal;
 }
 
 footer > ul > li {
